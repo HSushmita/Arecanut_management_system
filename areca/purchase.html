@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>purchase form</title>
+	<style type="text/css">
+		body{
+			background: lightblue;
+		}
+		.contact-form{
+			max-width: 350px;
+			margin: auto;
+			border-radius: 5px;
+			padding: 20px;
+
+		}
+		input[type=text],select{
+			width: 100%;
+			padding: 12px 20px;
+			display: inline-block;
+
+		}
+		button{
+			background: blanchedalmond;
+			width: 100%;
+           padding: 14px 20px;
+           margin: 8px 0;
+           border: none;
+		}
+	</style>
+</head>
+<body>
+   <div class="contact-form">
+   	<form action="purchase.php" method="post">
+   		<label for="name">your name</label>
+   		<input type="text" name="fullname">
+   		<label for="email">your email</label>
+   		<input type="text" name="email">
+   		<label for="variety">variety</label>
+   		<select type="text" id="variety" name="variety">
+   			<option value="variety">select variety</option>
+   			<option value="arecanut">arecanut</option>
+
+   			<option value="cardamom">cardamom</option>
+   			<option value="pepper">pepper</option>
+   		</select>
+         <button type="submit">submit</button>    
+   	</form>
+   </div>
+</body>
+</html>
